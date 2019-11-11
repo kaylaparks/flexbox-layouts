@@ -25,7 +25,7 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #ffa826;
     text-shadow: none;
 }
 
@@ -96,9 +96,11 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   height: 100%;
   width: 100%;
+  background: url(../img/bkgd2.jpg) bottom no-repeat;
+  background-size: cover;
 }
 
 body {
@@ -107,28 +109,46 @@ body {
   font-size: 1.25em;
   height: 100%;
   color: #fff;
+  background: #ffddab;
+  background: rgba(248, 213, 180, 0.5);
+  /*backgrounrd: url(../img/bkgd2.jpg)bottom no-repeat;
+  background-size: cover;*/
 }
 
 header,
 footer {
-  background-color: #222;
-  height: 80px;
+  color:rgb(255, 152, 35);
+  height: auto;
   width: 100%;
 }
 
 main {
-  background-color: #ccc;
+  color: #fff;
   height: 250px;
   width: 100%;
+  font-size: 1em;
+  /*background: rgb(255, 193, 113);*/
+  padding: 0px 20px 0px 20px;
+  
 }
 
-header,
 footer,
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  font-family: 'Rokkitt', serif;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    font-size: 5em;
+    padding: 100px;
+    /*background: url('../img/bkgd2.jpg') no-repeat;*/
+    background-size: cover;
+    font-family: 'Leckerli One', cursive;
 }
 
 #div-1,
@@ -137,10 +157,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   line-height: 1.5em;
   font-size: 1.25em;
   height: auto;
+  color: #fff;
+  font-family: 'Rokkitt', serif;
 }
 
 .wrapper span {
@@ -148,24 +169,25 @@ main {
   font-size: 1.3em;
 }
 
+
 .flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   justify-content: space-between;
+
 }
 
 .flex-items {
-  color: #fff;
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: #f16059;
   width: 30%;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 10px 0px 10px;
 }
 
 /* ==========================================================================
@@ -252,17 +274,23 @@ main {
     body {
       padding: 1em;
     }
+    header {
+        font-size: 5em;
+    }
 }
 
 @media (min-width: 1200px) {
   #div-1,
   #div-2{
-      /* set your flex value to 1 50% */
+      flex: 1 50%;/* set your flex value to 1 50% */
   }
 
   #div-3 {
-    /* set your flex value to 1 100% */
+    flex: 1 100%; /* set your flex value to 1 100% */
   }
+}
+headr {
+    font-size: 7em;
 }
 
 @media print,
